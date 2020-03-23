@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-Pokedex/Pods-Pokedex-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Astral/Astral.framework
+${BUILT_PRODUCTS_DIR}/BFAstral/BFAstral.framework
+${BUILT_PRODUCTS_DIR}/BrightFutures/BrightFutures.framework
+${BUILT_PRODUCTS_DIR}/Kio/Kio.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
