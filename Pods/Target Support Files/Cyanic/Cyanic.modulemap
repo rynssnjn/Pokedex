@@ -1,6 +1,0 @@
-framework module Cyanic {
-  umbrella header "Cyanic-umbrella.h"
-
-  export *
-  module * { export * }
-}
