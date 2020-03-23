@@ -1,5 +1,7 @@
 # Pokedex
 
+Language: Swift
+
 A training app of our company(FFUF Manila Inc.) for new hires and interns
 
 Creates UI programmatically using SnapKit
