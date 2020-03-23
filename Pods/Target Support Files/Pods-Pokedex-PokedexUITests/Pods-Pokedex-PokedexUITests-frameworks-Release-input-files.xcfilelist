@@ -1,0 +1,13 @@
+${PODS_ROOT}/Target Support Files/Pods-Pokedex-PokedexUITests/Pods-Pokedex-PokedexUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Astral/Astral.framework
+${BUILT_PRODUCTS_DIR}/BFAstral/BFAstral.framework
+${BUILT_PRODUCTS_DIR}/BrightFutures/BrightFutures.framework
+${BUILT_PRODUCTS_DIR}/Cyanic/Cyanic.framework
+${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework
+${BUILT_PRODUCTS_DIR}/Kio/Kio.framework
+${BUILT_PRODUCTS_DIR}/LayoutKit/LayoutKit.framework
+${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
+${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework
+${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework

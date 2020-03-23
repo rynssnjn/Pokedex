@@ -1,0 +1,82 @@
+PODS:
+  - Astral (2.4.0)
+  - BFAstral (1.4.0):
+    - Astral
+    - BrightFutures
+  - BrightFutures (8.0.0)
+  - Cyanic (0.9.1):
+    - LayoutKit
+    - RxDataSources
+    - RxSwift
+    - Sourcery
+  - Differentiator (4.0.1)
+  - Kio (2.2.2)
+  - LayoutKit (10.1.3)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+  - SnapKit (5.0.1)
+  - Sourcery (0.17.0)
+
+DEPENDENCIES:
+  - Astral
+  - BFAstral
+  - Cyanic (from `https://github.com/feilfeilundfeil/Cyanic.git`, branch `develop`)
+  - Kio
+  - LayoutKit (from `https://github.com/hooliooo/LayoutKit.git`)
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - Astral
+    - BFAstral
+    - BrightFutures
+    - Differentiator
+    - Kio
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - Sourcery
+
+EXTERNAL SOURCES:
+  Cyanic:
+    :branch: develop
+    :git: https://github.com/feilfeilundfeil/Cyanic.git
+  LayoutKit:
+    :git: https://github.com/hooliooo/LayoutKit.git
+
+CHECKOUT OPTIONS:
+  Cyanic:
+    :commit: 843eb738687b2d0853cd3314b634a934951cf631
+    :git: https://github.com/feilfeilundfeil/Cyanic.git
+  LayoutKit:
+    :commit: 7658050bf5569305922b7af23013a55cda430353
+    :git: https://github.com/hooliooo/LayoutKit.git
+
+SPEC CHECKSUMS:
+  Astral: ed5d3072daf5cf630c8a4784c4274a252840f52b
+  BFAstral: 42cbc19d96a6e3a7a86900fff42cb4b5aedf7dbe
+  BrightFutures: f8427b46feabaf73c5e71ace7d86d65dfbb47696
+  Cyanic: 48ad7faeec7886a96074834ba768980a5787807c
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  Kio: 320b6cb88a8c9175bb72880e8a85bea66027a0a8
+  LayoutKit: 49124071fa761d7040bd7de9b1e951ad926804d5
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Sourcery: 3ed61be7c8a1218fce349266139379dba477efe0
+
+PODFILE CHECKSUM: ec946b69f18d7fbc7272fc7eff11fb3d99ff801e
+
+COCOAPODS: 1.8.4
