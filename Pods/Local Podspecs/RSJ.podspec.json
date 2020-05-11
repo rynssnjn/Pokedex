@@ -1,0 +1,26 @@
+{
+  "name": "RSJ",
+  "version": "1.2.0",
+  "summary": "A toolset to make swift coding easier",
+  "homepage": "https://github.com/rynssnjn/RSJ",
+  "license": "MIT",
+  "authors": {
+    "Rael San Juan": "rynssnjn.git@gmail.com"
+  },
+  "platforms": {
+    "ios": "9.3"
+  },
+  "source": {
+    "git": "https://github.com/rynssnjn/RSJ.git",
+    "tag": "1.2.0"
+  },
+  "source_files": "Source/**/*.swift",
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "CoreGraphics"
+  ],
+  "requires_arc": true,
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
+}

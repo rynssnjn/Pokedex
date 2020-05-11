@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Kio
+import RSJ
 import Astral
 
 public final class PokedexListCoordinator: AbstractCoordinator {

@@ -4,13 +4,13 @@ PODS:
     - Astral
     - BrightFutures
   - BrightFutures (8.0.0)
-  - Kio (2.2.2)
+  - RSJ (1.2.0)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - Astral
   - BFAstral
-  - Kio
+  - RSJ (from `https://github.com/rynssnjn/RSJ.git`, branch `develop`)
   - SnapKit
 
 SPEC REPOS:
@@ -18,16 +18,25 @@ SPEC REPOS:
     - Astral
     - BFAstral
     - BrightFutures
-    - Kio
     - SnapKit
+
+EXTERNAL SOURCES:
+  RSJ:
+    :branch: develop
+    :git: https://github.com/rynssnjn/RSJ.git
+
+CHECKOUT OPTIONS:
+  RSJ:
+    :commit: f4b67f7f7ea5ed389eef7ac29e585bcf0c3fcb40
+    :git: https://github.com/rynssnjn/RSJ.git
 
 SPEC CHECKSUMS:
   Astral: ed5d3072daf5cf630c8a4784c4274a252840f52b
   BFAstral: 42cbc19d96a6e3a7a86900fff42cb4b5aedf7dbe
   BrightFutures: f8427b46feabaf73c5e71ace7d86d65dfbb47696
-  Kio: 320b6cb88a8c9175bb72880e8a85bea66027a0a8
+  RSJ: e1e4c106d891228795c47b075520e0a761dd8b18
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 3a37023795be4f217b490f49e744fd0b5a6fc281
+PODFILE CHECKSUM: e8052c035c57ebb62fd599873fca52f98a2c226c
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

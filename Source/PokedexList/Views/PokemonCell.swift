@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Kio
+import RSJ
 import SnapKit
 
 public final class PokemonCell: UITableViewCell {
@@ -59,8 +59,8 @@ public final class PokemonCell: UITableViewCell {
     public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.contentView.backgroundColor = Colors.white
-        self.kio.subviews(forAutoLayout: self.pokemonImageView, self.stackView)
-        self.kio.cornerRadius(of: 5.0)
+        self.rsj.addViews(forAutoLayout: self.pokemonImageView, self.stackView)
+        self.rsj.cornerRadius(of: 5.0)
         
         self.pokemonImageView.snp.remakeConstraints { (make: ConstraintMaker) -> Void in
             make.leading.equalToSuperview().offset(20.0)

@@ -7,10 +7,10 @@
 //
 
 import Foundation
-import Kio
+import RSJ
 import SnapKit
 
-public final class DetailView: KioView {
+public final class DetailView: RSJView {
     
     // MARK: Subviews
     public let segmentedControl: UISegmentedControl = {
@@ -58,7 +58,7 @@ public final class DetailView: KioView {
         super.init(frame: frame)
         self.backgroundColor = Colors.white
         
-        self.kio.subviews(forAutoLayout: self.segmentedControl, self.collectionView)
+        self.rsj.addViews(forAutoLayout: self.segmentedControl, self.collectionView)
         
         self.segmentedControl.snp.remakeConstraints { (make: ConstraintMaker) in
             make.top.equalToSuperview().offset(10.0)

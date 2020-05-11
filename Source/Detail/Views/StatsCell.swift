@@ -8,7 +8,7 @@
 
 import UIKit
 import SnapKit
-import Kio
+import RSJ
 
 public final class StatsCell: UICollectionViewCell {
     
@@ -192,7 +192,7 @@ public final class StatsCell: UICollectionViewCell {
         super.init(frame: frame)
         self.backgroundColor = Colors.white
         
-        self.kio.subviews(forAutoLayout:
+        self.rsj.addViews(forAutoLayout:
             self.titleStackView,
                           self.hpStatView, self.atkStatView,
                           self.defStatView, self.spAtkStatView,
@@ -233,11 +233,13 @@ public final class StatsCell: UICollectionViewCell {
     
 }
 
-// MARK: Configurable Properites & Methods
-extension StatsCell: Configurable {
-    
+// MARK: Identifier
+extension StatsCell {
     public static var identifier: String = "StatsCell"
-    
+}
+
+// MARK: Configurable Cell
+extension StatsCell {
     public func configure(with viewModel: StatsViewModel) {
         
         self.hpValueLabel.text = viewModel.hp

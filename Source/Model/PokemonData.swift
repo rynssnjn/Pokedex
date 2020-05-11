@@ -7,19 +7,15 @@
 //
 
 import Foundation
-import Kio
 
 public struct PokemonData {
     
     // MARK: Intializer
     public init(dict: [String: Any]) {
-        let dict: ReadOnlyDictionary<JSONKey, Any> = ReadOnlyDictionary<JSONKey, Any>(dict)
-        
-        self.id = dict[JSONKey.id] as! String
-        self.name = dict[JSONKey.identifier] as! String
-        self.height = Int(dict[JSONKey.height] as! String)!
-        self.weight = Int(dict[JSONKey.weight] as! String)!
-        
+        self.id = dict["id"] as! String
+        self.name = dict["identifier"] as! String
+        self.height = Int(dict["height"] as! String)!
+        self.weight = Int(dict["weight"] as! String)!
     }
     
     // MARK: Stored Properties

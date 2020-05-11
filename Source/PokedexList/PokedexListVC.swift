@@ -7,9 +7,9 @@
 //
 
 import Foundation
-import Kio
+import RSJ
 
-public final class PokedexListVC: KioViewController {
+public final class PokedexListVC: RSJViewController {
     
     // MARK: Delegate Properties
     private unowned let delegate: PokedexListVCDelegate
@@ -37,11 +37,11 @@ public final class PokedexListVC: KioViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        self.kio.setUpNavigationItem { (navigationItem: UINavigationItem) -> Void in
-            navigationItem.rightBarButtonItem = self.rootView.searchButtonItem
+        self.rsj.setUpNavigationItem { (item: UINavigationItem) -> Void in
+            item.rightBarButtonItem = self.rootView.searchButtonItem
             self.rootView.searchButtonItem.action = #selector(PokedexListVC.searchBarButtonTapped)
             self.rootView.searchButtonItem.target = self
-            
+
             self.rootView.cancelButtonItem.action = #selector(PokedexListVC.cancelButtonTapped)
             self.rootView.cancelButtonItem.target = self
         }
@@ -97,9 +97,9 @@ private extension PokedexListVC {
 extension PokedexListVC: UITableViewDelegate {
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        self.kio.showActivityIndicator()
+        self.rsj.showActivityIndicator()
         self.delegate.pokemonCellTapped(self.dataSource.object(at: indexPath).model) {
-            self.kio.hideActivityIndicator()
+            self.rsj.hideActivityIndicator()
         }
     }
     
