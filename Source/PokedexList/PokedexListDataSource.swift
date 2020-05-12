@@ -7,9 +7,9 @@
 //
 
 import Foundation
-import Kio
+import RSJ
 
-public final class PokedexListDataSource: KioObject {
+public final class PokedexListDataSource: RSJObject {
     
     // MARK: Delegate Properties
     private unowned let delegate: PokedexListDataSourceDelegate

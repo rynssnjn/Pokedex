@@ -8,7 +8,7 @@
 
 import UIKit
 import SnapKit
-import Kio
+import RSJ
 
 public final class DescriptionCell: UICollectionViewCell {
     
@@ -121,7 +121,7 @@ public final class DescriptionCell: UICollectionViewCell {
     public override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = Colors.white
-        self.kio.subviews(forAutoLayout:
+        self.rsj.addViews(forAutoLayout:
             self.imageView, self.descriptionTextView,
             self.heightTitleLabel, self.heightValueLabel,
             self.weightTitleLabel, self.weightValueLabel,
@@ -130,9 +130,9 @@ public final class DescriptionCell: UICollectionViewCell {
             self.evolutionOverlay, self.containerView
         )
         
-        self.containerView.kio.subview(forAutoLayout: self.stackView)
+        self.containerView.rsj.addView(forAutoLayout: self.stackView)
         
-        self.evolutionOverlay.kio.subview(forAutoLayout: self.evolutionLabel)
+        self.evolutionOverlay.rsj.addView(forAutoLayout: self.evolutionLabel)
         
         self.imageView.snp.remakeConstraints { (make: ConstraintMaker) -> Void in
             make.top.equalToSuperview().offset(10.0)
@@ -250,11 +250,13 @@ public final class DescriptionCell: UICollectionViewCell {
     }
 }
 
-// MARK: Configurable Properites & Methods
-extension DescriptionCell: Configurable {
-    
+// MARK: Identifier
+extension DescriptionCell {
     public static var identifier: String = "DescriptionCell"
-    
+}
+
+// MARK: Configurable Cell
+extension DescriptionCell {
     public func configure(with viewModel: DescriptionViewModel) {
         self.imageView.image = viewModel.image
         

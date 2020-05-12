@@ -19,12 +19,12 @@ public struct PokemonDataViewModel: Equatable {
     }
     
     public var height: String {
-        let heightInMeters: Double = self.model.height.kio.doubleValue / 10.0
+        let heightInMeters: Double = self.model.height.rsj.asDouble / 10.0
         return "\(heightInMeters) m"
     }
     
     public var weight: String {
-        let weightInKilograms: Double = self.model.weight.kio.doubleValue / 10.0
+        let weightInKilograms: Double = self.model.weight.rsj.asDouble / 10.0
         return "\(weightInKilograms) kg"
     }
     

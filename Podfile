@@ -6,7 +6,7 @@ target 'Pokedex' do
   use_frameworks!
 
   # Pods for Pokedex
-  pod 'Kio'
+  pod 'RSJ', :git => 'https://github.com/rynssnjn/RSJ.git'
   pod 'SnapKit'
   pod 'Astral'
   pod 'BFAstral'

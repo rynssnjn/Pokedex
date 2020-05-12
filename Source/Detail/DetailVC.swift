@@ -7,9 +7,9 @@
 //
 
 import Foundation
-import Kio
+import RSJ
 
-public final class DetailVC: KioViewController {
+public final class DetailVC: RSJViewController {
     
     // MARK: Delegate Properties
     private unowned let delegate: DetailVCDelegate
@@ -46,7 +46,7 @@ public final class DetailVC: KioViewController {
         self.rootView.collectionView.delegate = self
         self.rootView.collectionView.dataSource = self
         
-        self.kio.setUpNavigationItem { [weak self] (navigationItem: UINavigationItem) in
+        self.rsj.setUpNavigationItem { [weak self] (navigationItem: UINavigationItem) in
             guard let s = self else { return }
             
             s.rootView.titleLabel.text = s.descriptionViewModel.name.uppercased()
@@ -56,7 +56,7 @@ public final class DetailVC: KioViewController {
             s.rootView.backButtonItem.action = #selector(DetailVC.backButtonItemTapped)
         }
 
-        self.kio.setUpTargetActions(with: [
+        self.rsj.setUpTargetActions(with: [
             self.rootView.segmentedControl: #selector(DetailVC.segmentedControlTapped(_:))
         ])
         

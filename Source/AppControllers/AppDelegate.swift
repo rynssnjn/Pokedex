@@ -22,9 +22,15 @@ public final class AppDelegate: UIResponder {
     // MARK: Instance Methods
     private func setUpAppAppearance() {
         // UIActivityIndicatorView
-        UIActivityIndicatorView.appearance().backgroundColor = UIColor.kio.color(red: 225, green: 225, blue: 225)
+        UIActivityIndicatorView.appearance().backgroundColor = UIColor.rsj.color(red: 225, green: 225, blue: 225)
         UIActivityIndicatorView.appearance().style = UIActivityIndicatorView.Style.white
         UIActivityIndicatorView.appearance().color = Colors.red
+
+        if let window = self.window {
+            if #available(iOS 13.0, *) {
+                window.overrideUserInterfaceStyle = UIUserInterfaceStyle.light
+            }
+        }
     }
 }
 

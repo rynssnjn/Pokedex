@@ -7,10 +7,10 @@
 //
 
 import Foundation
-import Kio
+import RSJ
 import SnapKit
 
-public final class PokedexListView: KioView {
+public final class PokedexListView: RSJView {
 
     // MARK: Subviews
     public let searchBar: UISearchBar = {
@@ -50,7 +50,7 @@ public final class PokedexListView: KioView {
         super.init(frame: frame)
         
         self.backgroundColor = Colors.white
-        self.kio.subviews(forAutoLayout: self.tableView)
+        self.rsj.addView(forAutoLayout: self.tableView)
         
         self.tableView.snp.remakeConstraints { (make: ConstraintMaker) -> Void in
             make.top.equalToSuperview().offset(20.0)

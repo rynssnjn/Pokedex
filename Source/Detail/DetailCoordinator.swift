@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Kio
+import RSJ
 
 public final class DetailCoordinator: AbstractCoordinator {
     

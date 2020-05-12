@@ -1,0 +1,6 @@
+framework module RSJ {
+  umbrella header "RSJ-umbrella.h"
+
+  export *
+  module * { export * }
+}

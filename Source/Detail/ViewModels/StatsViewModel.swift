@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Kio
 
 public struct StatsViewModel {
     
@@ -16,27 +15,27 @@ public struct StatsViewModel {
     
     // MARK: Computed Properties
     public var hpValue: CGFloat {
-        return self.stats.hitPoints.kio.cgFloatValue
+        return self.stats.hitPoints.rsj.asCGFloat
     }
     
     public var atkValue: CGFloat {
-        return self.stats.attack.kio.cgFloatValue
+        return self.stats.attack.rsj.asCGFloat
     }
     
     public var defValue: CGFloat {
-        return self.stats.defense.kio.cgFloatValue
+        return self.stats.defense.rsj.asCGFloat
     }
     
     public var spAtkValue: CGFloat {
-        return self.stats.specialAttack.kio.cgFloatValue
+        return self.stats.specialAttack.rsj.asCGFloat
     }
     
     public var spDefValue: CGFloat {
-        return self.stats.specialDefense.kio.cgFloatValue
+        return self.stats.specialDefense.rsj.asCGFloat
     }
     
     public var spdValue: CGFloat {
-        return self.stats.speed.kio.cgFloatValue
+        return self.stats.speed.rsj.asCGFloat
     }
     
     public var hp: String {
